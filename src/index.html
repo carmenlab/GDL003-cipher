@@ -7,7 +7,20 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo pruebafinal!</h1>
+      <label class="btn">Introduce Gerencia:</label>
+      <input type="text" id="Gerencia"  value="Gerencia" name="Gerencia" class="cuadro" required>
+      <br>  
+      <br>
+        <label class="btn">Clave:</label>
+        <input type="password" id="Clave" size="15" maxlength="3" value="Clave" name="offset" class="cuadro">
+        <br><br>
+        <input type="button" onclick="EnviarGerencia()" value="Enviar" class="btn">
+    </div>
+    <div id=cuadroMensaje>
+      <p id=MostrarGerencia></p>
+      <input type="text" id="mensaje"  value="Mensaje" name="mensaje" class="cuadro"></input><br><br> 
+      <input type="button" onclick="encode()" value="Cifrar" class="btn"></input>
+      <input type="button" onclick="decode()" value="Descifrar" class="btn"></input>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
