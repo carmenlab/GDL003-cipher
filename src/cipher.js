@@ -1,5 +1,5 @@
 window.cipher = {
-  encode: (string, offset) => {
+  encode: (offset, string) => {
     let  textoCifrado = "";
     for (let i = 0 ; i < string.length ; i++){    // recorrer el string 
       let codigoLetra = string.charCodeAt(i);     //convierte a codigo ASCII
@@ -25,7 +25,7 @@ window.cipher = {
     return textoCifrado;
   },
 
-  decode: (string, offset) => {
+  decode: (offset, string) => {
     let  textoDecode = "";
     for (let i = 0 ; i < string.length ; i++){    // recorrer el string 
       let codigoLetraDecode = string.charCodeAt(i);     //convierte a codigo ASCII
