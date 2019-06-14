@@ -7,6 +7,9 @@ body{
     margin: 0;
     font-family:"Open sans", sans-serif;
   }
+  *{
+    text-align: center;
+  }
   .btn {
     background-color: blue;
     border: none;
